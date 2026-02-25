@@ -26,7 +26,7 @@ export default function Testimonials() {
       className="rounded-2xl border border-emerald-200/60 bg-white p-6 shadow-xl shadow-emerald-950/5 dark:border-slate-800 dark:bg-slate-900"
     >
       <h2 className="mb-6 text-xl font-semibold text-slate-800 dark:text-slate-100">
-        What Our Clients Say
+        Trusted by Professionals
       </h2>
       <div className="grid gap-4 sm:grid-cols-3">
         {testimonials.map((t) => (

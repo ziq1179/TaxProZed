@@ -37,7 +37,7 @@ export default function SalaryTaxCalculator() {
       className="rounded-2xl border border-emerald-200/60 bg-white p-6 shadow-xl shadow-emerald-950/5 dark:border-emerald-800/40 dark:bg-slate-900"
     >
       <h2 className="mb-6 text-xl font-semibold text-slate-800 dark:text-slate-100">
-        Salary Tax Calculator
+        Calculate Your Salary Tax (FBR 2025–26)
       </h2>
 
       <div className="mb-6 grid gap-4 sm:grid-cols-2">

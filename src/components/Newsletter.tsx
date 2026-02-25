@@ -28,7 +28,7 @@ export default function Newsletter() {
   return (
     <section className="rounded-2xl border border-emerald-200/60 bg-white p-6 shadow-xl shadow-emerald-950/5 dark:border-slate-800 dark:bg-slate-900">
       <h2 className="mb-2 text-xl font-semibold text-slate-800 dark:text-slate-100">
-        Stay Updated
+        Never Miss a Budget Change
       </h2>
       <p className="mb-4 text-sm text-slate-600 dark:text-slate-400">
         Subscribe for budget updates, salary increase notifications, and tax

@@ -23,10 +23,10 @@ export default function Pricing() {
       className="rounded-2xl border border-emerald-200/60 bg-white p-6 shadow-xl shadow-emerald-950/5 dark:border-slate-800 dark:bg-slate-900"
     >
       <h2 className="mb-2 text-xl font-semibold text-slate-800 dark:text-slate-100">
-        Transparent Pricing
+        Clear Fees, No Surprises
       </h2>
       <p className="mb-6 text-sm text-slate-600 dark:text-slate-400">
-        Clear fees—no hidden charges. Contact us for custom packages.
+        Transparent fees—no hidden charges. Contact us for custom packages.
       </p>
       <div className="space-y-4">
         {pricingItems.map((item) => (

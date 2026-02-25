@@ -11,7 +11,7 @@ export default function Home() {
       {/* Hero */}
       <section className="mb-16 text-center">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-slate-50">
-          Pakistan&apos;s Tax Calculator & Consultancy
+          Your Tax Calculator & Expert Support in One Place.
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-slate-600 dark:text-slate-400">
           Calculate your salary tax instantly, file returns, and get expert
