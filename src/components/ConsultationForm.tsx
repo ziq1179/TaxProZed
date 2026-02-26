@@ -26,9 +26,9 @@ export default function ConsultationForm() {
 
   if (submitted) {
     return (
-      <section className="rounded-2xl border border-emerald-200/60 bg-white p-6 shadow-xl shadow-emerald-950/5 dark:border-slate-900">
+      <section className="rounded-2xl border-l-4 border-emerald-500 bg-white p-6 shadow-lg">
         <div className="flex flex-col items-center gap-4 py-8 text-center">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 dark:bg-emerald-900/40">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
             <svg
               className="h-7 w-7"
               fill="none"
@@ -43,16 +43,16 @@ export default function ConsultationForm() {
               />
             </svg>
           </div>
-          <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-100">
+          <h3 className="text-lg font-semibold text-slate-800">
             Request Received
           </h3>
-          <p className="max-w-sm text-slate-600 dark:text-slate-400">
+          <p className="max-w-sm text-slate-600">
             Our team will contact you within 24 hours to confirm your
             consultation appointment.
           </p>
           <button
             onClick={() => setSubmitted(false)}
-            className="text-sm font-medium text-emerald-600 hover:underline dark:text-emerald-400"
+            className="text-sm font-medium text-blue-600 hover:underline"
           >
             Submit another request
           </button>
@@ -64,12 +64,12 @@ export default function ConsultationForm() {
   return (
     <section
       id="consultation"
-      className="rounded-2xl border border-emerald-200/60 bg-white p-6 shadow-xl shadow-emerald-950/5 dark:border-slate-900"
+      className="rounded-2xl border-l-4 border-emerald-500 bg-white p-6 shadow-lg"
     >
-      <h2 className="mb-2 text-xl font-semibold text-slate-800 dark:text-slate-100">
+      <h2 className="mb-2 text-xl font-semibold text-slate-800">
         Talk to a Tax Expert
       </h2>
-      <p className="mb-6 text-sm text-slate-600 dark:text-slate-400">
+      <p className="mb-6 text-sm text-slate-600">
         Schedule an appointment with our tax experts. We&apos;ll get back within
         24 hours.
       </p>
@@ -78,7 +78,7 @@ export default function ConsultationForm() {
         <div>
           <label
             htmlFor="name"
-            className="mb-1 block text-sm font-medium text-slate-600 dark:text-slate-400"
+            className="mb-1 block text-sm font-medium text-slate-600"
           >
             Name
           </label>
@@ -89,13 +89,13 @@ export default function ConsultationForm() {
             required
             value={form.name}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-800 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
+            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-800 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
           />
         </div>
         <div>
           <label
             htmlFor="email"
-            className="mb-1 block text-sm font-medium text-slate-600 dark:text-slate-400"
+            className="mb-1 block text-sm font-medium text-slate-600"
           >
             Email
           </label>
@@ -106,13 +106,13 @@ export default function ConsultationForm() {
             required
             value={form.email}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-800 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
+            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-800 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
           />
         </div>
         <div>
           <label
             htmlFor="phone"
-            className="mb-1 block text-sm font-medium text-slate-600 dark:text-slate-400"
+            className="mb-1 block text-sm font-medium text-slate-600"
           >
             Phone
           </label>
@@ -123,13 +123,13 @@ export default function ConsultationForm() {
             required
             value={form.phone}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-800 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
+            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-800 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
           />
         </div>
         <div>
           <label
             htmlFor="profession"
-            className="mb-1 block text-sm font-medium text-slate-600 dark:text-slate-400"
+            className="mb-1 block text-sm font-medium text-slate-600"
           >
             Profession
           </label>
@@ -138,7 +138,7 @@ export default function ConsultationForm() {
             name="profession"
             value={form.profession}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-800 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
+            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-800 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
           >
             <option value="">Select profession</option>
             <option value="salaried">Salaried Employee</option>
@@ -151,7 +151,7 @@ export default function ConsultationForm() {
         <div>
           <label
             htmlFor="message"
-            className="mb-1 block text-sm font-medium text-slate-600 dark:text-slate-400"
+            className="mb-1 block text-sm font-medium text-slate-600"
           >
             Message (optional)
           </label>
@@ -162,12 +162,12 @@ export default function ConsultationForm() {
             value={form.message}
             onChange={handleChange}
             placeholder="Brief description of your tax needs..."
-            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-800 placeholder:text-slate-400 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 dark:placeholder:text-slate-500"
+            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-800 placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
           />
         </div>
         <button
           type="submit"
-          className="w-full rounded-lg bg-emerald-600 px-4 py-3 font-medium text-white transition-colors hover:bg-emerald-700 focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 dark:bg-emerald-500 dark:hover:bg-emerald-600"
+          className="w-full rounded-lg bg-blue-600 px-4 py-3 font-medium text-white transition-colors hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
         >
           Request Consultation
         </button>

@@ -20,29 +20,29 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
-      className="rounded-2xl border border-emerald-200/60 bg-white p-6 shadow-xl shadow-emerald-950/5 dark:border-slate-800 dark:bg-slate-900"
+      className="rounded-2xl border-l-4 border-amber-500 bg-white p-6 shadow-lg"
     >
-      <h2 className="mb-2 text-xl font-semibold text-slate-800 dark:text-slate-100">
+      <h2 className="mb-2 text-xl font-semibold text-slate-800">
         Clear Fees, No Surprises
       </h2>
-      <p className="mb-6 text-sm text-slate-600 dark:text-slate-400">
+      <p className="mb-6 text-sm text-slate-600">
         Transparent fees—no hidden charges. Contact us for custom packages.
       </p>
       <div className="space-y-4">
         {pricingItems.map((item) => (
           <div
             key={item.name}
-            className="flex flex-col gap-1 rounded-xl border border-slate-200/60 p-4 dark:border-slate-700 sm:flex-row sm:items-center sm:justify-between"
+            className="flex flex-col gap-1 rounded-xl border border-slate-200/60 bg-white p-4 shadow-sm sm:flex-row sm:items-center sm:justify-between"
           >
             <div>
-              <p className="font-medium text-slate-800 dark:text-slate-100">
+              <p className="font-medium text-slate-800">
                 {item.name}
               </p>
-              <p className="text-sm text-slate-600 dark:text-slate-400">
+              <p className="text-sm text-slate-600">
                 {item.description}
               </p>
             </div>
-            <p className="text-lg font-semibold text-emerald-600 dark:text-emerald-400 sm:shrink-0">
+            <p className="text-lg font-semibold text-blue-600 sm:shrink-0">
               {item.price}
             </p>
           </div>

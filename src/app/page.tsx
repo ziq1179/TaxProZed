@@ -10,10 +10,10 @@ export default function Home() {
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
       {/* Hero */}
       <section className="mb-16 text-center">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-slate-50">
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           Your Tax Calculator & Expert Support in One Place.
         </h1>
-        <p className="mx-auto max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+        <p className="mx-auto max-w-2xl text-lg text-slate-600">
           Calculate your salary tax instantly, file returns, and get expert
           support. Trusted by HR managers, accountants, and business owners
           across Pakistan.
