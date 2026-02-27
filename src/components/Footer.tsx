@@ -15,25 +15,25 @@ export default function Footer() {
           </div>
           <nav className="flex flex-wrap gap-6">
             <Link
-              href="#calculator"
+              href="/#calculator"
               className="text-sm text-slate-600 hover:text-blue-600"
             >
               Calculator
             </Link>
             <Link
-              href="#services"
+              href="/tax-slabs"
               className="text-sm text-slate-600 hover:text-blue-600"
             >
-              Services
+              Tax Slabs
             </Link>
             <Link
-              href="#pricing"
+              href="/faq"
               className="text-sm text-slate-600 hover:text-blue-600"
             >
-              Pricing
+              FAQ
             </Link>
             <Link
-              href="#consultation"
+              href="/#consultation"
               className="text-sm text-slate-600 hover:text-blue-600"
             >
               Contact

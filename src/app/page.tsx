@@ -1,4 +1,5 @@
 import SalaryTaxCalculator from "@/components/SalaryTaxCalculator";
+import TaxComparison from "@/components/TaxComparison";
 import Services from "@/components/Services";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
@@ -23,6 +24,11 @@ export default function Home() {
       {/* Calculator - Primary CTA */}
       <section className="mb-16">
         <SalaryTaxCalculator />
+      </section>
+
+      {/* Tax Comparison */}
+      <section className="mb-16">
+        <TaxComparison />
       </section>
 
       {/* Services */}

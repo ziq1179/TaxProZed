@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   title: "TaxPro Pakistan | Tax Calculator & Consultancy",
   description:
     "Pakistan's comprehensive tax consultancy and calculator platform. Calculate salary tax, file returns, and get expert tax support.",
+  keywords: "Pakistan tax calculator, FBR tax, salary tax, income tax, tax slabs, tax filing Pakistan",
+  authors: [{ name: "TaxPro Pakistan" }],
+  openGraph: {
+    title: "TaxPro Pakistan | Tax Calculator & Consultancy",
+    description: "Calculate your salary tax instantly using FBR-approved slabs (2014-2026)",
+    type: "website",
+    locale: "en_PK",
+  },
 };
 
 export default function RootLayout({

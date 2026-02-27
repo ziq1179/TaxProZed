@@ -19,16 +19,27 @@ function formatCurrency(amount: number): string {
 export default function SalaryTaxCalculator() {
   const [monthlyIncome, setMonthlyIncome] = useState<string>("");
   const [selectedYear, setSelectedYear] = useState<TaxYear>(2025);
+  const [isCalculating, setIsCalculating] = useState(false);
+  const [error, setError] = useState<string>("");
 
   const result = useMemo(() => {
     const income = parseFloat(monthlyIncome.replace(/,/g, ""));
     if (isNaN(income) || income <= 0) return null;
+    
+    setIsCalculating(true);
+    setTimeout(() => setIsCalculating(false), 200);
+    
     return calculateSalaryTax(income, selectedYear);
   }, [monthlyIncome, selectedYear]);
 
   const handleIncomeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const raw = e.target.value.replace(/[^0-9.]/g, "");
     setMonthlyIncome(raw);
+    setError("");
+    
+    if (raw && parseFloat(raw) <= 0) {
+      setError("Please enter a valid amount greater than 0");
+    }
   };
 
   return (
@@ -75,12 +86,21 @@ export default function SalaryTaxCalculator() {
             placeholder="e.g. 150000"
             value={monthlyIncome}
             onChange={handleIncomeChange}
-            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-800 placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+            className={`w-full rounded-lg border ${
+              error ? "border-red-300" : "border-slate-300"
+            } bg-white px-4 py-2.5 text-slate-800 placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20`}
           />
+          {error && <p className="mt-1 text-sm text-red-600">{error}</p>}
         </div>
       </div>
 
-      {result && (
+      {isCalculating && (
+        <div className="flex items-center justify-center py-8">
+          <div className="h-8 w-8 animate-spin rounded-full border-4 border-blue-200 border-t-blue-600"></div>
+        </div>
+      )}
+
+      {!isCalculating && result && (
         <div className="space-y-3 rounded-xl bg-slate-50 p-4">
           <h3 className="text-sm font-medium text-slate-600">
             Results
